@@ -211,7 +211,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="FormGenero.aspx" />
+    <Content Include="FormGenero_Grupo.aspx" />
+    <Content Include="FormGrupo.aspx" />
     <Content Include="FormMusico.aspx" />
+    <Content Include="FormMusico_Grupo.aspx" />
     <Content Include="ListaGenero.aspx" />
     <Content Include="ListaGenero_Grupo.aspx" />
     <Content Include="ListaGrupo.aspx" />
@@ -397,12 +401,40 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FormGenero.aspx.cs">
+      <DependentUpon>FormGenero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormGenero.aspx.designer.cs">
+      <DependentUpon>FormGenero.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormGenero_Grupo.aspx.cs">
+      <DependentUpon>FormGenero_Grupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormGenero_Grupo.aspx.designer.cs">
+      <DependentUpon>FormGenero_Grupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormGrupo.aspx.cs">
+      <DependentUpon>FormGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormGrupo.aspx.designer.cs">
+      <DependentUpon>FormGrupo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FormMusico.aspx.cs">
       <DependentUpon>FormMusico.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="FormMusico.aspx.designer.cs">
       <DependentUpon>FormMusico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormMusico_Grupo.aspx.cs">
+      <DependentUpon>FormMusico_Grupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormMusico_Grupo.aspx.designer.cs">
+      <DependentUpon>FormMusico_Grupo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
