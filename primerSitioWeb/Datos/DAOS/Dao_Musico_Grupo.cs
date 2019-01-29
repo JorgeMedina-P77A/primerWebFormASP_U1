@@ -1,4 +1,5 @@
 ﻿using Datos.MODELOS;
+using Datos.UTIL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,27 +13,16 @@ namespace Datos.DAOS{
         public List<Musico_Grupo> getAll(){
 
             List<Musico_Grupo> lista;
-            lista = new List<Musico_Grupo>();
-
-            lista.Add(new Musico_Grupo(){
-                id_grupo = 1,
-                id_musico = 1,
-                instrumento = "Guitarra"
-            });
-
-            lista.Add(new Musico_Grupo(){
-                id_grupo = 2,
-                id_musico = 2,
-                instrumento = "Bateria"
-            });
-
-            lista.Add(new Musico_Grupo(){
-                id_grupo = 3,
-                id_musico = 3,
-                instrumento = "Bajo"
-            });
+            lista = BD_Dummy.listaMusico_Grupo;
 
             return lista;
+
+        }
+
+        public void add(Musico_Grupo m) {
+
+            List<Musico_Grupo> lista = BD_Dummy.listaMusico_Grupo;
+            lista.Add(m);
 
         }
 
