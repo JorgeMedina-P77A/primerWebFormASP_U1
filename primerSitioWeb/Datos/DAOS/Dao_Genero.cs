@@ -19,10 +19,28 @@ namespace Datos.DAOS{
 
         }
 
-        public void add(Genero m) {
+        public void add(Genero m){
 
             List<Genero> lista = BD_Dummy.listaGenero;
             lista.Add(m);
+
+        }
+
+        public Genero getById(int id){
+
+            List<Genero> lista = BD_Dummy.listaGenero;
+
+            foreach(Genero m in lista){
+
+                if(m.id_genero == id){
+
+                    return m;
+
+                }
+
+            }
+
+            return null;
 
         }
 

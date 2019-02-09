@@ -19,10 +19,28 @@ namespace Datos.DAOS{
 
         }
 
-        public void add(Grupo m) {
+        public void add(Grupo m){
 
             List<Grupo> lista = BD_Dummy.listaGrupo;
             lista.Add(m);
+
+        }
+
+        public Grupo getById(int id){
+
+            List<Grupo> lista = BD_Dummy.listaGrupo;
+
+            foreach(Grupo m in lista){
+
+                if(m.id_grupo == id){
+
+                    return m;
+
+                }
+
+            }
+
+            return null;
 
         }
 
