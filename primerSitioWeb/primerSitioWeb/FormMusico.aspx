@@ -33,7 +33,7 @@
         <br />
         <asp:Button ID="Btn_add_musico" runat="server" OnClick="Btn_add_musico_Click" Text="Agregar" Width="90px" />
 &nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Btn_Cancel" runat="server" Text="Cancelar" Width="90px" />
+        <asp:Button ID="Btn_Cancel" runat="server" Text="Cancelar" Width="90px" OnClick="Btn_Cancel_Click" />
     </form>
 </body>
 </html>

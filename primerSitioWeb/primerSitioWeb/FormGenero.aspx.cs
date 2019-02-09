@@ -11,11 +11,21 @@ namespace primerSitioWeb {
 
     public partial class FormGenero : System.Web.UI.Page {
 
-        protected void Page_Load(object sender, EventArgs e) {
+        protected void Page_Load(object sender, EventArgs e){
+
+            if(Session["idGenero"] != null){
+
+                Dao_Genero dao = new Dao_Genero();
+                int id = int.Parse(Session["idGenero"].ToString());
+                Genero m = dao.getById(id);
+                Text_id.Text = m.id_genero + "";
+                Text_descrip.Text = m.descripcion;
+
+            }
 
         }
 
-        protected void Btn_add_genero_Click(object sender, EventArgs e) {
+        protected void Btn_add_genero_Click(object sender, EventArgs e){
 
             Genero m = new Genero();
             Dao_Genero dao = new Dao_Genero();
@@ -24,10 +34,17 @@ namespace primerSitioWeb {
             m.descripcion = Text_descrip.Text;
             
             dao.add(m);
+            Session["idGenero"] = null;
+            Response.Redirect("ListaGenero.aspx");
 
         }
 
+        protected void Btn_Cancel_Click(object sender, EventArgs e){
 
+            Session["idGenero"] = null;
+            Response.Redirect("ListaGenero.aspx");
+
+        }
 
     }
 

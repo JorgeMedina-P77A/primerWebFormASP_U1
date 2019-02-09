@@ -21,7 +21,7 @@
         <br />
         <asp:Button ID="Btn_add_grupo" runat="server" OnClick="Btn_add_grupo_Click" Text="Agregar" Width="90px" />
 &nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Btn_Cancel" runat="server" Text="Cancelar" Width="90px" />
+        <asp:Button ID="Btn_Cancel" runat="server" Text="Cancelar" Width="90px" OnClick="Btn_Cancel_Click" />
         <br />
     
     </div>
