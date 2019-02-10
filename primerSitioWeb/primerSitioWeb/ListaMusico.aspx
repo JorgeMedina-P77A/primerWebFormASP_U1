@@ -1,16 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListaMusico.aspx.cs" Inherits="primerSitioWeb.ListaPersonas" %>
+﻿<%@ Page Title="Lista Musico" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ListaMusico.aspx.cs" Inherits="primerSitioWeb.ListaPersonas" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    
     <div>
     
-    </div>
+        <br />
+        <h1>Lista Musicos</h1>
+        <br />
+
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="ObjectDataSource1" AllowPaging="True" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <AlternatingRowStyle BackColor="#CCCCCC" />
             <Columns>
@@ -34,6 +31,9 @@
         <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="getAll" TypeName="Datos.DAOS.Dao_Musico"></asp:ObjectDataSource>
         <br />
         <asp:Button ID="btn_toForm" runat="server" OnClick="btn_toForm_Click" Text="Agregar" Width="100px" />
-    </form>
-</body>
-</html>
+    
+    </div>
+
+
+
+</asp:Content>

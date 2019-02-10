@@ -13,15 +13,6 @@ namespace primerSitioWeb {
     public partial class FormMusico_Grupo {
         
         /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
         /// Text_id_grupo control.
         /// </summary>
         /// <remarks>

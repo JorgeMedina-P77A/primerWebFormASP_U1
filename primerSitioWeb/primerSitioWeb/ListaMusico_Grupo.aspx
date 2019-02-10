@@ -1,16 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListaMusico_Grupo.aspx.cs" Inherits="primerSitioWeb.ListaMusico_Grupo" %>
+﻿<%@ Page Title="Relacion Musico - Grupo" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ListaMusico_Grupo.aspx.cs" Inherits="primerSitioWeb.ListaMusico_Grupo" %>
 
-<!DOCTYPE html>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
     <div>
     
-    </div>
+        <br />
+        <h1>Relacion Musico - Grupo</h1>
+        <br />
+
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" DataSourceID="ObjectDataSource1" ForeColor="Black" GridLines="Vertical" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <AlternatingRowStyle BackColor="#CCCCCC" />
             <Columns>
@@ -34,6 +31,9 @@
         <br />
         <asp:Button ID="btn_toForm" runat="server" OnClick="btn_toForm_Click" Text="Agregar" Width="100px" />
         <br />
-    </form>
-</body>
-</html>
+
+    </div>
+
+
+    
+</asp:Content>

@@ -1,27 +1,29 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FormGenero.aspx.cs" Inherits="primerSitioWeb.FormGenero" %>
+﻿<%@ Page Title="Genero" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FormGenero.aspx.cs" Inherits="primerSitioWeb.FormGenero" %>
 
-<!DOCTYPE html>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
     <div>
+
+        <br />
+        <h1>Formulario Genero</h1>
+        <br />
     
-        ID<br />
+        <b>ID</b><br />
         <asp:TextBox ID="Text_id" runat="server" Width="300px"></asp:TextBox>
         <br />
-        Descripcion<br />
+        <br />
+        <b>Descripcion</b><br />
         <asp:TextBox ID="Text_descrip" runat="server" Width="300px"></asp:TextBox>
         <br />
         <br />
         <asp:Button ID="Btn_add_genero" runat="server" OnClick="Btn_add_genero_Click" Text="Agregar" Width="90px" />
 &nbsp;&nbsp;&nbsp;
         <asp:Button ID="Btn_Cancel" runat="server" Text="Cancelar" Width="90px" OnClick="Btn_Cancel_Click" />
+        <br />
+        <br />
     
     </div>
-    </form>
-</body>
-</html>
+
+
+
+</asp:Content>

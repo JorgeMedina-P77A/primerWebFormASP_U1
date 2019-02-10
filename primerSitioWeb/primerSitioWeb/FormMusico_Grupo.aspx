@@ -1,26 +1,28 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FormMusico_Grupo.aspx.cs" Inherits="primerSitioWeb.FormMusico_Grupo" %>
+﻿<%@ Page Title="Musico - Grupo" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FormMusico_Grupo.aspx.cs" Inherits="primerSitioWeb.FormMusico_Grupo" %>
 
-<!DOCTYPE html>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
     <div>
+
+        <br />
+        <h1>Relacion Musico - Grupo</h1>
+        <br />
     
-        ID Grupo<br />
+        <b>ID Grupo</b><br />
         <asp:TextBox ID="Text_id_grupo" runat="server" Width="300px"></asp:TextBox>
         <br />
-        ID Musico<br />
+        <br />
+        <b>ID Musico</b><br />
         <asp:TextBox ID="Text_id_musico" runat="server" Width="300px"></asp:TextBox>
         <br />
-        Instrumento<br />
+        <br />
+        <b>Instrumento</b><br />
         <asp:TextBox ID="Text_instrumento" runat="server" Width="300px"></asp:TextBox>
         <br />
-        Fecha inicio<asp:Calendar ID="Text_fecha_inicio" runat="server"></asp:Calendar>
-        Fecha fin<asp:Calendar ID="Text_fecha_fin" runat="server"></asp:Calendar>
+        <br />
+        <b>Fecha inicio</b><asp:Calendar ID="Text_fecha_inicio" runat="server"></asp:Calendar>
+        <br />
+        <b>Fecha fin</b><asp:Calendar ID="Text_fecha_fin" runat="server"></asp:Calendar>
         <br />
         <asp:Button ID="Btn_add_relacion" runat="server" OnClick="Btn_add_relacion_Click" Text="Agregar" Width="90px" />
 &nbsp;&nbsp;&nbsp;
@@ -29,6 +31,7 @@
         <br />
     
     </div>
-    </form>
-</body>
-</html>
+
+
+    
+</asp:Content>
